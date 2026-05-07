@@ -1,34 +1,33 @@
 #include<iostream>
 using namespace std;
-
-int peri(int s);
-int peri(int l,int wi);
-int peri(int s1,int s2,int s3);
-
+int num1(int a);
+float num2(float b);
+char num3(char c);
 int main()
 {
-    int s,l,wi,s1,s2,s3;
-    cout<<"Enter side of square : \n";
-    cin>>s;
-    cout<<"Enter length and width of rectangle : \n";
-    cin>>l>>wi;
-    cout<<"Enter all three sides of triangle : \n";    
-    cin>>s1>>s2>>s3;
-    cout<<"Perimeter of square : "<<peri(s)<<endl;
-    cout<<"Perimeter of recatngle : "<<peri(l,wi)<<endl;
-    cout<<"Perimeter of triangle : "<<peri(s1,s2,s3)<<endl;
-    return 0;   
+    int a;
+    float b;
+    char c;
+    cout<<"Enter Integer:";
+    cin>>a;
+    cout<<"Enter Float:";
+    cin>>b;
+    cout<<"Enter Character:";
+    cin>>c;
+    cout<<"Integer: "<<num1(a)<<endl;
+    cout<<"Float: "<<num2(b)<<endl;
+    cout<<"Character: "<<num3(c)<<endl;
+    return 0;
 }
-
-int peri(int s)
+int num1(int a)
 {
-    return s+s;
+    return a;
 }
-int peri(int l,int wi)
+float num2(float b)
 {
-    return 2*(l+wi);
+    return b;   
 }
-int peri(int s1,int s2,int s3)
+char num3(char c)
 {
-    return s1+s2+s3;
+    return c;
 }
