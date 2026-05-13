@@ -92,5 +92,6 @@ int main()
     s1.getdata();
     s1.cal();
     s1.display();
+    s1.writefile();
     return 0;
 }
